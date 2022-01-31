@@ -10,8 +10,8 @@ body {
   display: flex;
 }
 
-/* Here using -webkit, we make angle
-  of 45 degree of falling star */
+/* Webkit - Makes Angle 45 Degrees */
+
 .sky {
   position: relative;
   width: 100%;
@@ -20,7 +20,8 @@ body {
   transform: rotateZ(45deg);
 }
 
-/* Here we are making roundabout balls */
+/* Making the Round balls */
+
 .star {
   position: absolute;
   left: 75%;
@@ -38,7 +39,8 @@ body {
     shooting 3000ms ease-in-out infinite;
 }
 
-/* Here we add before and after effect to star */
+/* Before and After Effects */
+
 .star::before,
 .star::after {
   content: "";
@@ -62,10 +64,7 @@ body {
   transform: translateX(50%) rotateZ(-45deg);
 }
 
-/* Here we are adding location of each
-  nth-child, animations, delays, and
-  before and after effects to each
-  and every balls(stars) */
+/* Creating each Shooting Star with Animation, Start Location */
 
 .star:nth-child(1) {
   top: calc(50% - -119px);
@@ -328,8 +327,7 @@ body {
 }
 
 
-/* This code will help to generate
-  effect in tail of star */
+/* Effects of the tails in the shooting stars */
 
 @keyframes tail {
   0% {
@@ -345,8 +343,8 @@ body {
   }
 }
 
-/* This code will generate shining
-  effect in head of star */
+/* Shining Head Effect of Shooting Star */
+
 @keyframes shining {
   0% {
     width: 0;
@@ -361,8 +359,8 @@ body {
   }
 }
 
-/* Here we are adding webkit-animation
-  to head of star for shining */
+/* Webkit animations for Shining Head */
+
 @-webkit-keyframes shining {
   0% {
     width: 0;
@@ -377,8 +375,8 @@ body {
   }
 }
 
-/* Here we are adding webkit-animation
-  to tail of star */
+/* Webkit animations for Tails */
+
 @-webkit-keyframes tail {
   0% {
     width: 0;
@@ -393,8 +391,8 @@ body {
   }
 }
 
-/* Here we are adding webkit-animation
-  for shooting effect */
+/* Webkit Animation for Shooting Star effect */
+
 @-webkit-keyframes shooting {
   0% {
     -webkit-transform: translateX(0);
@@ -407,7 +405,8 @@ body {
   }
 }
 
-/* Here we make shooting effect */
+/* Shooting Effect */
+
 @keyframes shooting {
   0% {
     -webkit-transform: translateX(0);
